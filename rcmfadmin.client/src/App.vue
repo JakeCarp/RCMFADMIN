@@ -1,18 +1,32 @@
 <template>
-  <header>
+  <!-- <header>
     <Navbar />
-  </header>
-  <main class="bg-dark">
+  </header> -->
+
+
+
+  <main class="bg-light container-fluid">
+
+<div class="row">
+  <div class="col-md-2 bg-dark lighten-10">
+<AdminNavigator/>
+  </div>
+  <div class="col-md-10">
     <router-view />
+
+  </div>
+</div>
+
   </main>
-   <footer class="bg-dark text-light">
+   <!-- <footer class="bg-dark text-light">
     Made by Molè
-  </footer>
+  </footer> -->
 </template>
 
 <script>
 import { computed } from 'vue'
 import { AppState } from './AppState'
+import AdminNavigator from "./components/AdminNavigator.vue"
 import Navbar from './components/Navbar.vue'
 
 export default {
@@ -21,7 +35,7 @@ export default {
       appState: computed(() => AppState)
     }
   },
-  components: { Navbar }
+  components: { Navbar, AdminNavigator }
 }
 </script>
 <style lang="scss">
