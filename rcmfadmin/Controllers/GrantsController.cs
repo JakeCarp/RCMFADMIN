@@ -1,8 +1,8 @@
 namespace rcmfadmin.Controllers;
 
 [ApiController]
-[Route("api/[controller]")]
-public class ValuesController : ControllerBase
+[Route("[controller]")]
+public class GrantsController : ControllerBase
 {
   [HttpGet]
   public ActionResult<List<string>> Get()

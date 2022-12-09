@@ -33,6 +33,27 @@ public class Startup
 
     services.AddScoped<AccountsRepository>();
     services.AddScoped<AccountService>();
+
+    services.AddTransient<DonorsService>();
+    services.AddTransient<DonorsRepository>();
+
+    services.AddTransient<GrantsService>();
+    services.AddTransient<GrantsRepository>();
+
+    services.AddTransient<NewsletterService>();
+    services.AddTransient<NewsletterRepository>();
+
+    services.AddTransient<PlayersService>();
+    services.AddTransient<PlayersRepository>();
+
+    services.AddTransient<SponsorsService>();
+    services.AddTransient<SponsorsRepository>();
+
+    services.AddTransient<TeamsService>();
+    services.AddTransient<TeamsRepository>();
+
+    services.AddTransient<TournamentsService>();
+    services.AddTransient<TournamentsRepository>();
   }
 
   private void ConfigureCors(IServiceCollection services)

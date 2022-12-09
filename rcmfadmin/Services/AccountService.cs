@@ -14,6 +14,16 @@ public class AccountService
     return _repo.GetByEmail(email);
   }
 
+  internal Account GetAdminById(string adminId)
+  {
+    Account admin = _repo.GetById(adminId);
+    if (admin == null)
+    {
+      throw new Exception("UNAUTHORIZED USER");
+    }
+    return admin;
+  }
+
   internal Account GetOrCreateProfile(Account userInfo)
   {
     Account profile = _repo.GetById(userInfo.Id);
