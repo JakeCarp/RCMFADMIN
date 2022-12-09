@@ -36,6 +36,6 @@
     "editor.codeActionsOnSave": {
       "source.fixAll": true
     },
-    "cSpell.words": ["rcmfadmin"]
+    "cSpell.words": ["rcmfadmin", "rcmforg"]
   }
 }

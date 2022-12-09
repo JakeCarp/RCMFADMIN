@@ -1,4 +1,4 @@
--- Active: 1669695164409@@rcmforg.mysql.database.azure.com@3306@rcmforg
+-- Active: 1669834043794@@rcmforg.mysql.database.azure.com@3306@rcmforg
 
 CREATE TABLE
     IF NOT EXISTS accounts(
