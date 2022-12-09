@@ -41,6 +41,7 @@ export default {
       account: computed(() => AppState.account),
       async login() {
         AuthService.loginWithPopup()
+        
       },
       async logout() {
         AuthService.logout({ returnTo: window.location.origin })
