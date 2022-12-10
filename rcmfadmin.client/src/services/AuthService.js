@@ -33,7 +33,7 @@ AuthService.on(AuthService.AUTH_EVENTS.AUTHENTICATED, async function () {
   socketService.authenticate(AuthService.bearer);
   donationsService.getDonors();
   grantsService.getGrants();
-  teamsService.getTeams()
+  // teamsService.getTeams()
   newsLetterService.getNewsletterSubscribers()
   // NOTE if there is something you want to do once the user is authenticated, place that here
 });

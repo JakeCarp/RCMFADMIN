@@ -78,8 +78,8 @@
         </div>
       </div>
 
-      <div class="col-md-6 my-3">
-        <div class="card p-2 elevation-6 border-0">
+      <div class="col-md-6 my-3 ">
+        <div class="card p-2 elevation-6 border-0 h-100">
           <div class="d-flex justify-cont   ent-between p-2">
             <p class="fw-bold">Upcoming Event</p>
             <img
@@ -118,7 +118,7 @@
           <div
             class="card p-1 elevation-2 border d-flex justify-content-evenly scrollY"
           >
-            <div
+            <!-- <div
               class="d-flex justify-content-around p-2 rounded selectable"
               v-for="s in sponsors"
             >
@@ -127,8 +127,18 @@
               <p>{{ s.email }}</p>
               <p>{{ s.tier }}</p>
               <p>{{ s.createdAt }}</p>
-            </div>
+            </div> -->
+            <Chart2/>
           </div>
+        </div>
+      </div>
+
+      <div class="col-md-12">
+        <div class="card border-0 elevation-5 text-center ">
+ <p class="fw-bold fs-1">Google Anyaltyics?</p>
+ <div class="">
+  <Chart1/>
+ </div>
         </div>
       </div>
     </div>
@@ -140,6 +150,7 @@ import { computed } from "@vue/reactivity";
 import { onMounted, ref, watchEffect } from "vue";
 import { AppState } from "../AppState.js";
 import Pop from "../utils/Pop.js";
+import Chart1 from "./Chart1.vue";
 
 export default {
   props: {},
@@ -168,7 +179,7 @@ export default {
       // ),
     };
   },
-  components: {},
+  components: { Chart1 },
 };
 </script>
 
