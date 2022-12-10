@@ -1,6 +1,6 @@
-import Axios from 'axios'
-import { baseURL } from '../env'
-export const api = Axios.create({
+import Axios from "axios";
+import { baseURL } from "../env";
+export const mySQL = Axios.create({
   baseURL,
-  timeout: 8000
-})
+  timeout: 8000,
+});
