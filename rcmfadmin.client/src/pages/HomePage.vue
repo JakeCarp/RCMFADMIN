@@ -6,12 +6,7 @@
       </div> -->
       <div class="col-md-12 d-flex justify-content-between">
         <div>
-          <button
-         
-            class="elevation-2 btn btn-outline-danger rounded-1 p-2 px-5 fw-bold fs-3"
-          >
-            Logout
-          </button>
+     
         </div>
         <h1 class="abril">Admin DashBoard </h1>
         <div>
@@ -25,67 +20,7 @@
       </div>
       <div class="col-md-12">
         <!-- NavButtons -->
-        <nav>
-          <div
-            class="nav nav-tabs rounded justify-content-center justify-content-evenly"
-            id="nav-tab"
-            role="tablist"
-          >
-            <button
-          
-              class="nav-link active"
-              id="nav-home-tab"
-              data-bs-toggle="tab"
-              data-bs-target="#nav-home"
-              type="button"
-              role="tab"
-              aria-controls="nav-home"
-              aria-selected="true"
-            >
-              <i class="mdi mdi-view-dashboard me-1"></i> DashBoard
-            </button>
-            <button
-          
-              class="nav-link"
-              id="nav-profile-tab"
-              data-bs-toggle="tab"
-              data-bs-target="#nav-profile"
-              type="button"
-              role="tab"
-              aria-controls="nav-profile"
-              aria-selected="false"
-            >
-              <i class="mdi mdi-account fs-2 me-1"></i> Members
-            </button>
-            <button
-          
-              class="nav-link"
-              id="nav-contact-tab"
-              data-bs-toggle="tab"
-              data-bs-target="#nav-contact"
-              type="button"
-              role="tab"
-              aria-controls="nav-contact"
-              aria-selected="false"
-            >
-              Contact
-            </button>
-
-            <button
-               
-              class="nav-link"
-              id="nav-fourth-tab"
-              data-bs-toggle="tab"
-              data-bs-target="#nav-fourth"
-              type="button"
-              role="tab"
-              aria-controls="nav-fourth"
-              aria-selected="false"
-            >
-              Events
-            </button>
-          </div>
-        </nav>
+    
         <!-- !NavButtons -->
         <div class="tab-content" id="nav-tabContent">
           <div
@@ -146,6 +81,7 @@ import Tab1 from "../components/Tab1.vue";
 
 export default {
   setup() {
+    
     return {
       account: computed(() => AppState.account),
     };

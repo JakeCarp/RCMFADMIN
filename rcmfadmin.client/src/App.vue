@@ -8,7 +8,7 @@
   <main class="bg-light container-fluid">
 
 <div class="row">
-  <div class="col-md-2 bg-dark lighten-10">
+  <div class="col-md-2 bg-dark  elevation-5  admin-nav">
 <AdminNavigator/>
   </div>
   <div class="col-md-10">
@@ -50,5 +50,9 @@ footer {
   display: grid;
   place-content: center;
   height: 32px;
+}
+
+.admin-nav{
+  height: 100vh;
 }
 </style>
