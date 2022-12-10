@@ -2,12 +2,12 @@
   <div class="container p-4">
     <div class="row">
       <div class="col-md-4 my-2">
-        <div class="card p-2  border-0 bg-primary">
+        <div class="card p-2  border-0 bg-white">
           <div class="d-flex justify-content-between p-2">
             <div class="">
               <p class="fw-bold mb-0">Donations</p>
               <p class="roboto text-grey">
-                <!-- Total Count since {{ new Date().toLocaleDateString() }} -->
+                Total Count since {{ new Date().toLocaleDateString() }}
               </p>
             </div>
             <img
@@ -18,7 +18,7 @@
             />
           </div>
           <div class="text-center">
-            <!-- <p class="roboto display-2 text-shadow2">${{ total }}</p> -->
+            <p class="roboto display-2 text-shadow2">${{ total }}</p>
             <p class="roboto fs-5 text-shadow2">
               More Information on MemberTab
             </p>
@@ -26,12 +26,12 @@
         </div>
       </div>
       <div class="col-md-4 my-2">
-        <div class="card p-2 border-0 bg-success lighten-0">
+        <div class="card p-2 border-0 bg-white lighten-0">
           <div class="d-flex justify-content-between p-2">
             <div class="">
               <p class="fw-bold mb-0">NewsLetter Subscriptions</p>
               <p class="roboto">
-                <!-- Total Count since {{ new Date().toLocaleDateString() }} -->
+                Total Count since {{ new Date().toLocaleDateString() }}
               </p>
             </div>
             <img
@@ -43,7 +43,7 @@
           </div>
           <div class="text-center">
             <p class="roboto display-2 text-shadow2">
-              <!-- {{ subScribers.length }} -->
+              {{ subScribers.length }}
             </p>
             <p class="roboto fs-5 text-shadow2">
               More Information on MemberTab
@@ -52,12 +52,12 @@
         </div>
       </div>
       <div class="col-md-4 my-2">
-        <div class="card p-2  border-0 bg-danger lighten-0">
+        <div class="card p-2  border-0 bg-white lighten-0">
           <div class="d-flex justify-content-between p-2">
             <div class="">
               <p class="fw-bold mb-0">Grant Applications</p>
               <p class="roboto">
-                <!-- Total Count since {{ new Date().toLocaleDateString() }} -->
+                Total Count since {{ new Date().toLocaleDateString() }}
               </p>
             </div>
             <img
@@ -69,7 +69,7 @@
           </div>
           <div class="text-center">
             <p class="roboto display-2 text-shadow2">
-              <!-- {{ grants.length }} -->
+              {{ grants.length }}
             </p>
             <p class="roboto fs-5 text-shadow2">
               More Information on MemberTab

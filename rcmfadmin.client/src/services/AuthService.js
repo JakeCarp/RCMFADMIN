@@ -6,7 +6,10 @@ import { accountService } from "./AccountService";
 import { mySQL } from "./AxiosService";
 import { donationsService } from "./DonationsService.js";
 import { grantsService } from "./GrantsService.js";
+import { newsLetterService } from "./NewsLetterService.js";
 import { socketService } from "./SocketService";
+import { teamsService } from "./TeamsService.js";
+import { tournamentsService } from "./TournamentsService.js";
 
 export const AuthService = initialize({
   domain,
@@ -30,6 +33,8 @@ AuthService.on(AuthService.AUTH_EVENTS.AUTHENTICATED, async function () {
   socketService.authenticate(AuthService.bearer);
   donationsService.getDonors();
   grantsService.getGrants();
+  teamsService.getTeams()
+  newsLetterService.getNewsletterSubscribers()
   // NOTE if there is something you want to do once the user is authenticated, place that here
 });
 

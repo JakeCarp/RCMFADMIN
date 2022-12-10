@@ -4,10 +4,8 @@
       <!-- <div class="col-md-3 test d-flex flex-column  justify-content-between ">
      
       </div> -->
-      <div class="col-md-12 d-flex justify-content-center">
-        <div>
-     
-        </div>
+      <div class="col-md-12 d-flex justify-content-center bg-white rounded-1 elevation-5">
+     <div class="d-flex align-items-center"> <i class="mdi mdi-bell fs-3"></i></div>
         <h1 class="abril">Admin DashBoard </h1>
     
       </div>

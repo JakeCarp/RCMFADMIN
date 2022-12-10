@@ -1,13 +1,18 @@
 <template>
   <div class="container">
-    <div class="row my-2 g-2 position-relative">
-      <div class="table-responsive rounded p-3">
+    
+    <div class="row my-2 g-2 position-relative justify-content-center">
+      <div class="col-md-8 p-2 rounded bg-success lighten-30 text-center ">
+ <p class="mb-0 fs-1">Donations</p>
+      </div>
+      <div class="table-responsive p-3 elevation-5 bg-white">
         <table class="table table-hover align-middle">
           <thead class="table-dark elevation-5">
             <tr class="">
+              <th>Index</th>
               <th>Name</th>
               <th>Email</th>
-              <th>Amount</th>
+              <th>$ Amount</th>
               <th>Donation Date</th>
             </tr>
           </thead>
@@ -22,17 +27,17 @@
           </tbody>
           <tfoot></tfoot>
         </table>
-      </div>
+      </div> 
     </div>
 
     <div class="row my-2 g-2">
       <div class="table-responsive">
         <table class="table table-hover table-borderless align-middle">
-          <thead class="table-light">
+          <thead class="table-light ">
             <caption>
               Sponsors
             </caption>
-            <tr>
+            <tr >
               <th>Name</th>
               <th>Email</th>
               <th>Tier</th>
@@ -77,7 +82,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-thead {
-  border-radius: 40px !important;
+
+
+td{
+  font-family: sans-serif;
+  font-weight: 600;
 }
 </style>

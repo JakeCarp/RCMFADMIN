@@ -3,10 +3,10 @@ import { Team } from "../models/Team.js";
 import { mySQL } from "./AxiosService.js";
 
 class TeamsService {
-  async getTeams() {
-    const res = await mySQL.get("teams");
-    AppState.teams = res.data.map((t) => new Team(t));
-  }
+  // async getTeams() {
+  //   const res = await mySQL.get("teams");
+  //   AppState.teams = res.data.map((t) => new Team(t));
+  // }
 
   async createTeam(teamData) {
     const res = await mySQL.post("teams", teamData);

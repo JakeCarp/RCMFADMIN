@@ -1,7 +1,7 @@
 <template>
 <div class="container-fluid  ">
   <div class="row">
-    <div class="col-md-12 text-center mt-4">
+    <div class="col-md-12 text-center mt-4 bg-primary lighten-10 rounded-1 elevation-5">
      <h3> Admin</h3>
     </div>
     <div class="col-md-12  mt-2">
@@ -15,7 +15,7 @@
           >
             <button
           
-              class="nav-link active"
+              class="nav-link active mt-4"
               id="nav-home-tab"
               data-bs-toggle="tab"
               data-bs-target="#nav-home"
@@ -24,11 +24,11 @@
               aria-controls="nav-home"
               aria-selected="true"
             >
-              <i class="mdi mdi-view-dashboard me-1"></i> DashBoard
+              <i class="mdi mdi-view-dashboard  me-1"></i> DashBoard
             </button>
             <button
           
-              class="nav-link"
+              class="nav-link mt-4"
               id="nav-profile-tab"
               data-bs-toggle="tab"
               data-bs-target="#nav-profile"
@@ -41,7 +41,7 @@
             </button>
             <button
           
-              class="nav-link"
+              class="nav-link mt-4"
               id="nav-contact-tab"
               data-bs-toggle="tab"
               data-bs-target="#nav-contact"
@@ -50,12 +50,12 @@
               aria-controls="nav-contact"
               aria-selected="false"
             >
-              Contact
+              <i class="mdi mdi-phone me-1"></i> Contact
             </button>
 
             <button
                
-              class="nav-link"
+              class="nav-link mt-4"
               id="nav-fourth-tab"
               data-bs-toggle="tab"
               data-bs-target="#nav-fourth"
@@ -64,14 +64,14 @@
               aria-controls="nav-fourth"
               aria-selected="false"
             >
-              Events
+             <i class="mdi mdi-calendar me-1"></i>  Events
             </button>
           </div>
         </nav>
     </div>
   
   </div>
-  <div class="row">
+  <div class="row mt-4">
     <div class="col-12">
            <button
          
@@ -132,6 +132,7 @@ nav .nav-link {
   align-items: center;
   display: flex;
   border: 0;
+  justify-content: end;
 }
 
 nav .nav-link:hover {
