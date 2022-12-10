@@ -4,19 +4,12 @@
       <!-- <div class="col-md-3 test d-flex flex-column  justify-content-between ">
      
       </div> -->
-      <div class="col-md-12 d-flex justify-content-between">
+      <div class="col-md-12 d-flex justify-content-center">
         <div>
      
         </div>
         <h1 class="abril">Admin DashBoard </h1>
-        <div>
-           <button
-         
-            class="elevation-2 btn btn-outline-danger rounded-1 p-2 px-5 fw-bold fs-3"
-          >
-            Logout
-          </button>
-        </div>
+    
       </div>
       <div class="col-md-12">
         <!-- NavButtons -->
@@ -81,7 +74,7 @@ import Tab1 from "../components/Tab1.vue";
 
 export default {
   setup() {
-    
+
     return {
       account: computed(() => AppState.account),
     };
